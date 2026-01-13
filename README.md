@@ -26,7 +26,7 @@ I followed the professional **"Gather → Transform → Experience"** data lifec
 
 ---
 
-## 🧪 4. Skills (Technical Buzzwords)
+## 🧪 4. Skills
 * **SQL:** Advanced CTEs, Join Logic, Conditional `CASE` logic, and Aggregations.
 * **Analytics Engineering (dbt):** Modular Modeling, Data Lineage, Schema Testing, and Package Management (`dbt_utils`).
 * **Data Engineering:** Heuristic Data Generation (Python/Pandas), Cloud Architecture (Snowflake), and Medallion Standards.
