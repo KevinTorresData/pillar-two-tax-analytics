@@ -37,10 +37,10 @@ I followed the professional **"Gather → Transform → Experience"** data lifec
 ## 📊 5. Visual Dashboard & Audit Trail
 
 ### Executive Risk Heatmap (Power BI)
-![Global Tax Risk Dashboard](dashboard.png)
+![Global Tax Risk Heatmap](final_dashboard.png)
 
 ### Automated Audit Trail (dbt Lineage Graph)
-
+![dbt Transformation Lineage](lineage.png)
 
 
 ---
