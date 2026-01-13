@@ -40,7 +40,8 @@ I followed the professional **"Gather → Transform → Experience"** data lifec
 ![Global Tax Risk Dashboard](dashboard.png)
 
 ### Automated Audit Trail (dbt Lineage Graph)
-![dbt Transformation Lineage](lineage.png)
+
+
 
 ---
 
