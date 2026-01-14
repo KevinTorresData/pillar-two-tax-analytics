@@ -1,0 +1,16 @@
+name: 'pillar_two_analytics'
+version: '1.0.0'
+config-version: 2
+profile: 'default' 
+
+model-paths: ["dbt_models"] # This tells dbt where your SQL is
+test-paths: ["tests"]
+target-path: "target"
+
+models:
+  pillar_two_analytics:
+    dbt_models:
+      staging:
+        +materialized: view
+      marts:
+        +materialized: table
