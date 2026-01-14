@@ -59,6 +59,10 @@ The simulation identified that **80% of the $1.56B liability** is localized in t
 * **Next Steps:** Integrate a secondary pipeline to model **QDMTT (Qualified Domestic Minimum Top-up Tax)** interactions for 2025-ready reporting.
 * **Automation:** Develop live API connectors for SAP S/4HANA to replace CSV-based ingestion.
 
+
+pip install -r requirements.txt
+python data_factory.py
+
 ---
 
 ### 📩 Contact & Portfolio
