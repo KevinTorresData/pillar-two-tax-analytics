@@ -16,7 +16,7 @@ Under the new OECD Pillar Two regulations, multinational corporations must ensur
 
 ---
 
-## 🛠 3. Methodology
+## 🏗️ 3. Solution Overview & Architecture
 I followed the professional **"Gather → Transform → Experience"** data lifecycle:
 1. **Data Ingestion (Gather):** Built a Python-based **Synthetic Data Factory** to simulate 400 global entities, weighted with realistic "Profit Shifting" patterns to stress-test the logic.
 2. **Cloud Warehousing (Transform):** Implemented a **Medallion Architecture** (Raw > Staging > Analytics) in **Snowflake** for a pristine audit trail.
@@ -26,7 +26,7 @@ I followed the professional **"Gather → Transform → Experience"** data lifec
 
 ---
 
-## 🧪 4. Skills
+## 🧪 4. Strategic Capabilities & Technical Stack
 * **SQL:** Advanced CTEs, Join Logic, Conditional `CASE` logic, and Aggregations.
 * **Analytics Engineering (dbt):** Modular Modeling, Data Lineage, Schema Testing, and Package Management (`dbt_utils`).
 * **Data Engineering:** Heuristic Data Generation (Python/Pandas), Cloud Architecture (Snowflake), and Medallion Standards.
@@ -66,18 +66,6 @@ python data_factory.py
 
 ---
 
-## ⚙️ Quickstart: Reproducibility Guide
-To run this analytics engine locally:
-
-1. **Environment Setup:** 
-   `pip install -r requirements.txt`
-2. **Data Factory:**
-   `python data_factory/generate_tax_data.py` 
-   *Generates the raw CSVs used for the Snowflake ingestion.*
-3. **dbt Transformation:**
-   - Rename `profiles.yml.example` to `profiles.yml` and add credentials.
-   - Run `dbt deps` to install `dbt_utils`.
-   - Run `dbt build` to run all models and data quality tests.
 
 ## ⚠️ Disclaimer
 This repository is a **technical demonstration** of data engineering architecture. 
