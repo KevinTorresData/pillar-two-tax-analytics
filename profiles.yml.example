@@ -1,0 +1,14 @@
+# Replace brackets with your Snowflake credentials
+default:
+  outputs:
+    dev:
+      type: snowflake
+      account: [your_account_locator] # e.g., aevoupu-qp89663
+      user: [your_username]
+      password: [your_password]
+      role: ACCOUNTADMIN
+      database: PILLAR_TWO_DB
+      warehouse: PILLAR_TWO_WH
+      schema: STAGING
+      threads: 4
+  target: dev
