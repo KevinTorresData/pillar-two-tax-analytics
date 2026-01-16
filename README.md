@@ -63,6 +63,26 @@ The simulation identified that **80% of the $1.56B liability** is localized in t
 pip install -r requirements.txt
 python data_factory.py
 
+
+---
+
+## ⚙️ Quickstart: Reproducibility Guide
+To run this analytics engine locally:
+
+1. **Environment Setup:** 
+   `pip install -r requirements.txt`
+2. **Data Factory:**
+   `python data_factory/generate_tax_data.py` 
+   *Generates the raw CSVs used for the Snowflake ingestion.*
+3. **dbt Transformation:**
+   - Rename `profiles.yml.example` to `profiles.yml` and add credentials.
+   - Run `dbt deps` to install `dbt_utils`.
+   - Run `dbt build` to run all models and data quality tests.
+
+## ⚠️ Disclaimer
+This repository is a **technical demonstration** of data engineering architecture. 
+- **Data:** All figures are synthetically generated and do not represent real companies.
+- **Tax Advice:** This is not professional tax advice; logic is illustrative of OECD Pillar Two frameworks.
 ---
 
 ### 📩 Contact & Portfolio
