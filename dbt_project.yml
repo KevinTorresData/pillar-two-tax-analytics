@@ -1,16 +1,23 @@
-name: 'pillar_two_analytics'
+name: 'pillar_two_tax_analytics'
 version: '1.0.0'
 config-version: 2
 profile: 'default' 
 
-model-paths: ["dbt_models"] # This tells dbt where your SQL is
-test-paths: ["tests"]
+# --- CRITICAL: Mapping custom paths ---
+model-paths: ["dbt_models"]
+test-paths: ["dbt_models/staging"]
+analysis-paths: ["analyses"]
+seed-paths: ["data_factory"]
+macro-paths: ["macros"]
+
 target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
 
 models:
-  pillar_two_analytics:
-    dbt_models:
-      staging:
-        +materialized: view
-      marts:
-        +materialized: table
+  pillar_two_tax_analytics:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
